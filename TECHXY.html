@@ -9,13 +9,24 @@
 <body>
     <section class="name">
         <header>TECHXY AI</header>
-        <button id="button1">
-            <a href="login.html">LOGIN</a>
-        </button>
     </section>
     <section>
        <div id="box">
-
+        <div class="container">
+          <h1 id="h2">FIND YOUR EMOJI</h1>
+          <span id="emoji" aria-live="polite">😀</span>
+          <button class="bt" type="button" onclick="generateemoji()">
+            GENERATE EMOJI
+          </button>
+          <script>
+            let emojis = ["😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "🥲", "☺️", "😊", "😇", "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗", "😙", "😚", "😋", "😛", "😝", "😜", "🤪"];
+            function generateemoji() {
+              let randomindex = Math.floor(Math.random() * emojis.length);
+              document.getElementById("emoji").textContent = emojis[randomindex];
+            }
+            generateemoji();
+          </script>
+        </div>
        </div>
     </section>
 </body>
