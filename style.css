@@ -7,13 +7,12 @@
   justify-self:center;
   font-size: 50px;        
   font-weight: 800px;
-  padding-left:100px;
   text-shadow: 3px 4px 4px black;
 }
 span{
     display: flex;
     justify-self:center;
-    font-size:50px;
+    font-size:120px;
 }
 #h2{
     text-align: center;
@@ -21,8 +20,23 @@ span{
 }
 .bt{
 display: block;
-display: flex;
-justify-self:center;
+margin: 10px auto 0;
+padding: 12px 48px;
+border: none;
+border-radius: 8px;
+background-color: #2563eb;
+color: white;
+font-size: 16px;
+font-weight: 600;
+cursor: pointer;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+transition: background-color 0.2s ease, transform 0.5s ease, box-shadow 0.2s ease;
+}
+
+.bt:hover{
+    background-color: #093ac0;
+    transform:translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 #box{
     display: flex;
@@ -42,6 +56,7 @@ justify-self:center;
     height: 300px;
     border: 6px solid black;
     border-radius: 10px;
+    position: fixed;
 }
 
 #hi{

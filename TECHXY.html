@@ -19,7 +19,10 @@
             GENERATE EMOJI
           </button>
           <script>
-            let emojis = ["😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "🥲", "☺️", "😊", "😇", "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗", "😙", "😚", "😋", "😛", "😝", "😜", "🤪"];
+            let emojis = ["😀", "😃", "😄", "😁", "😆", "😅", "😂",
+            "🤣", "🥲", "☺️", "😊", "😇", "🙂", "🙃", "😉", "😌",
+            "😍", "🥰", "😘", "😗", "😙", "😚", "😋", "😛", "😝",
+            "😜", "🤪"];
             function generateemoji() {
               let randomindex = Math.floor(Math.random() * emojis.length);
               document.getElementById("emoji").textContent = emojis[randomindex];
