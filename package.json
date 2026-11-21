@@ -1,0 +1,15 @@
+{
+  "name": "techxy-ai",
+  "version": "1.0.0",
+  "description": "Techxy AI - a simple AI chat website",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "dotenv": "latest",
+    "express": "^4.21.2"
+  }
+}
